@@ -21,7 +21,7 @@
           <dt>Quantity</dt>
           <dd><%= @product.quantity %></dd>
           <dt>Price</dt>
-          <dd><%= @product.price %></dd>
+          <dd><%= '$' + number_with_precision(@product.price, :precision => 2, :delimiter => ',') %></dd>
         </dl>
       </div>
     </div>

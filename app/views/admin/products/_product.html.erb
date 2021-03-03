@@ -11,7 +11,7 @@
     <%= product.category.name %>
   </td>
   <td>
-    <%= product.price %>
+    <%= '$' + number_with_precision(product.price, :precision => 2, :delimiter => ',') %>
   </td>
   <td>
     <%= product.quantity %>
