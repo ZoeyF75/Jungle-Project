@@ -1,0 +1,12 @@
+Ability for admins tp create Sale records
+  -name
+  -percent_off
+  -starts_on (date)
+  -end_on (date)
+
+-Once any sale is active, display it on the products#index page (homepage)
+and affect the prices
+
+Error/Creation path: Routing => Controller => action within controller (index) =>
+View (index.html file)
+Model - only errors when trying to acess data
