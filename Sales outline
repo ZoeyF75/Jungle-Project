@@ -4,7 +4,7 @@ Ability for admins tp create Sale records
   -starts_on (date)
   -end_on (date)
 
--Once any sale is active, display it on the products#index page (homepage)
+-Once any sale is active, display it on any page (homepage)
 and affect the prices
 
 Error/Creation path: Routing => Controller => action within controller (index) =>
