@@ -61,6 +61,7 @@ main section.categories-show {
         border-bottom-right-radius: 20px;
         font-size: 0.8em;
         color: white;
+        opacity: 0.5;
       }
 
       &:hover {
@@ -68,6 +69,10 @@ main section.categories-show {
         border-color: #999;
 
         footer {
+          opacity: 1.0;
+        }
+
+        aside {
           opacity: 1.0;
         }
       }
