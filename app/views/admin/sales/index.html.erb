@@ -18,7 +18,6 @@
           <th>End Date</th>
           <th>Status</th>
           <th>Percent Off</th>
-          <th></th>
         </tr>
       </thead>
       <tbody>
@@ -30,9 +29,11 @@
             </td>
             <td>
               <%= sale.starts_on %>
-            </td><td>
+            </td>
+            <td>
               <%= sale.ends_on %>
-            </td><td>
+            </td>
+            <td>
               
               <% if sale.finished? %>
                 <span class="label label-danger">Finished</span>
@@ -42,9 +43,10 @@
                 <span class="label label-success">Active</span>
               <% end %>
 
-            </td><td>
+            </td>
+            <td>
               <%= sale.percent_off %>
-            </td><td>
+            </td>
           </tr>
           <% end %>
       </tbody>
