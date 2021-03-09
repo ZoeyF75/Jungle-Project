@@ -83,4 +83,17 @@ RSpec.describe User, type: :model do
       expect(@user).to_not be_valid
     end
   end
+
+  describe '.authenticate_with_credentials' do
+    it('should not be valid if user is not in database') do
+    user = User.create(
+    :name => 'Frank',
+    :email => 'Frank@hotmail.com',
+    :password => 'password1',
+    :password_confirmation => 'password1'
+    )
+    authenticate = User.authenticate_with_credentials(user.email, user.password)
+    expect(authenticate).to be_nil
+    end
+  end
 end
