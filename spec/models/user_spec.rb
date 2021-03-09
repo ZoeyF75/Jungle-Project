@@ -85,15 +85,36 @@ RSpec.describe User, type: :model do
   end
 
   describe '.authenticate_with_credentials' do
-    it('should not be valid if user is not in database') do
-    user = User.create(
-    :name => 'Frank',
-    :email => 'Frank@hotmail.com',
-    :password => 'password1',
-    :password_confirmation => 'password1'
-    )
-    authenticate = User.authenticate_with_credentials(user.email, user.password)
-    expect(authenticate).to be_nil
+
+    before :each do
+      @user = User.new(
+        :name => 'Frog',
+        :email => 'frogs@gmail.com',
+        :password => 'password',
+        :password_confirmation => 'password'
+      )
+      @user.save
     end
+
+    it 'should log a user in with valid credentials' do
+      user = User.authenticate_with_credentials('Frogs@gmail.com', 'password')
+      expect(user).to eq(@user)
+    end
+
+    it 'should not log user in with invalid credentials' do
+      user = User.authenticate_with_credentials('Frogs@gmail.com', 'not')
+      expect(user).not_to eq(@user)
+    end
+
+    it 'should accept an email address with white space before and/or after' do
+      user = User.authenticate_with_credentials('  Frogs@gmail.com  ', 'password')
+      expect(user).to eq(@user)
+    end
+
+    it 'should accept an email address regardless of case' do
+      user = User.authenticate_with_credentials('FROGS@GMAIL.com', 'password')
+      expect(user).to eq(@user)
+    end
+
   end
 end
