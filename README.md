@@ -26,8 +26,8 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 * PostgreSQL 9.x
 * Stripe
 
-!["Home Page"](https://github.com/ZoeyF75/Jungle-Project/blob/master/images/Products.png?raw=true)
-!["Checkout cart items"](https://github.com/ZoeyF75/Jungle-Project/blob/master/images/My_Cart.png?raw=true)
-![](!["Order Summary"](https://github.com/ZoeyF75/Jungle-Project/blob/master/images/Products.png?raw=true))
+ Home Page (https://github.com/ZoeyF75/Jungle-Project/blob/master/images/Products.png?raw=true)
+Checkout cart items (https://github.com/ZoeyF75/Jungle-Project/blob/master/images/My_Cart.png?raw=true)
+Order Summary (https://github.com/ZoeyF75/Jungle-Project/blob/master/images/Order_Summary.png?raw=true)
 
 
