@@ -25,3 +25,9 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 * Rails 4.2 [Rails Guide](http://guides.rubyonrails.org/v4.2/)
 * PostgreSQL 9.x
 * Stripe
+
+!["Home Page"](https://github.com/ZoeyF75/Jungle-Project/blob/master/images/Products.png?raw=true)
+!["Checkout cart items"](https://github.com/ZoeyF75/Jungle-Project/blob/master/images/My_Cart.png?raw=true)
+![](!["Order Summary"](https://github.com/ZoeyF75/Jungle-Project/blob/master/images/Products.png?raw=true))
+
+
